@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js" defer></script>
+  <title>Portfólio | Jeann Souza da Silva</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #0f172a;
+      color: #ffffff;
+    }
+
+    header {
+      width: 100%;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #111827;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #38bdf8;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+
+    .hero {
+      min-height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero-content {
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+
+    .btn-primary:hover {
+      background-color: #0ea5e9;
+    }
+
+    .btn-secondary {
+      border: 2px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .btn-secondary:hover {
+      background-color: #38bdf8;
+      color: #0f172a;
+    }
+
+    section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    .projects {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: #1e293b;
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .card h3 {
+      margin-bottom: 15px;
+      color: #ffffff;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #cbd5e1;
+      margin-bottom: 20px;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #38bdf8;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background-color: #111827;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 10px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Jeann Souza</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Olá, eu sou <span>Jeann Souza da Silva</span></h1>
+      <p>
+        Desenvolvedor Front-End em formação, com 9 anos de experiência em suporte técnico e infraestrutura de TI.
+        Atualmente estudando HTML, CSS e JavaScript, em busca da minha primeira oportunidade na área de desenvolvimento.
+      </p>
+
+      <div class="buttons">
+        <a class="btn-primary" href="#projetos">Ver Projetos</a>
+        <a class="btn-secondary" href="#contato">Entre em Contato</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre</h2>
+    <p>
+      Sou formado em Análise e Desenvolvimento de Sistemas e atualmente estou em transição de carreira para o desenvolvimento web.
+      Trago comigo uma base sólida em tecnologia, atendimento ao cliente, resolução de problemas e atuação em ambientes críticos com SLA.
+    </p>
+  </section>
+
+  <section id="projetos">
+    <h2>Projetos</h2>
+
+    <div class="projects">
+      <div class="card">
+        <h3>Projeto 1</h3>
+        <p>Projeto desenvolvido com HTML e CSS para praticar estrutura, estilização e responsividade.</p>
+        <a href="#">Ver projeto</a>
+      </div>
+
+      <div class="card">
+        <h3>Projeto 2</h3>
+        <p>Página de perfil profissional criada para apresentar minhas informações e links de contato.</p>
+        <a href="#">Ver projeto</a>
+      </div>
+
+      <div class="card">
+        <h3>Projeto 3</h3>
+        <p>Projeto em desenvolvimento para evoluir meus conhecimentos em JavaScript e front-end.</p>
+        <a href="#">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>
+      GitHub:
+      <a href="https://github.com/jeannsouza27-blip" target="_blank" style="color:#38bdf8;">
+        jeannsouza27-blip
+      </a>
+      <br><br>
+      LinkedIn:
+      <a href="https://www.linkedin.com/in/jeann-silva/" target="_blank" style="color:#38bdf8;">
+        jeann-silva
+      </a>
+      <br><br>
+      WhatsApp:
+      <a href="https://wa.me/5527997948088" target="_blank" style="color:#38bdf8;">
+        27 997948088
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <p>© 2026 Jeann Souza - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
